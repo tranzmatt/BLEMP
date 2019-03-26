@@ -3,6 +3,9 @@
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708" moduleId="org.eclipse.cdt.core.settings" name="Debug - S130">
+				<macros>
+					<stringMacro name="NRF_SDK" type="VALUE_PATH_DIR" value="/home/mclark/Code/NordicSemiconductor/SDK/nRF51_SDK_9.0.0_2e23562_full"/>
+				</macros>
 				<externalSettings/>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
@@ -14,7 +17,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708" name="Debug - S130" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708" name="Debug - S130" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.connection=unix:///var/run/docker.sock" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708." name="/" resourcePath="">
 						<toolChain errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.112391604" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.1649089137" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
@@ -39,6 +42,7 @@
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.206029116" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.1712780355" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" value="true" valueType="boolean"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.447165661" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.id.1823015966" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.id" value="1287942917" valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.968958544" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
 							<builder buildPath="${workspace_loc:/BLEMP}/Debug" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="ilg.gnuarmeclipse.managedbuild.cross.builder.1667185390" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder">
 								<outputEntries>
@@ -48,32 +52,34 @@
 							</builder>
 							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.722554771" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.1326807989" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.2089427584" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_hids"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu/experimental"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/gpiote"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_debug_assert_handler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/ble_flash"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_error_log"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/pstorage"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/trace"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/softdevice/common/softdevice_handler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/timer"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/softdevice/s130/headers"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/nrf_soc_nosd"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/util"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/hal"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/scheduler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/common"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/device_manager"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu/ble_transport"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_bas"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_dfu"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_dis"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BLEMP/BLEMP/src}&quot;"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.2089427584" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" useByScannerDiscovery="true" valueType="includePath">
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_hids"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu/experimental"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/gpiote"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_debug_assert_handler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/ble_flash"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_error_log"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/pstorage"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/trace"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/softdevice/common/softdevice_handler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/timer"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/softdevice/s130/headers"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/nrf_soc_nosd"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/util"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/hal"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/scheduler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/common"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/device_manager"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu/ble_transport"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_bas"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_dfu"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_dis"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/toolchain/cmsis/include"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/delay"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BLEMP/src}&quot;"/>
 								</option>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.579739432" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.579739432" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="NRF51822_QFAC_GC"/>
 									<listOptionValue builtIn="false" value="BLE_STACK_SUPPORT_REQD"/>
 									<listOptionValue builtIn="false" value="NRF51"/>
@@ -81,39 +87,41 @@
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.1110275960" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
 							</tool>
 							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1797698980" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.130798637" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.130798637" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="BLE_STACK_SUPPORT_REQD"/>
 									<listOptionValue builtIn="false" value="NRF51"/>
 									<listOptionValue builtIn="false" value="CONFIG_S130"/>
 								</option>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1203132160" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_hids"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu/experimental"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/gpiote"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_debug_assert_handler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/ble_flash"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/twi_master"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_error_log"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/pstorage"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/trace"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/softdevice/common/softdevice_handler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/timer"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/util"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/hal"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/scheduler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/common"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/device_manager"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu/ble_transport"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_bas"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_dfu"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_dis"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/softdevice/s130/headers"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:}/nrf51_sdk/components/device&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:}/nrf51_sdk/components/toolchain/gcc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:}/nrf51_sdk/components/toolchain&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:}/nrf51_sdk/components/drivers_nrf/twi_master/incubated&quot;"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/src}"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1203132160" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_hids"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu/experimental"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/gpiote"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_debug_assert_handler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/ble_flash"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/twi_master"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_error_log"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/pstorage"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/trace"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/softdevice/common/softdevice_handler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/timer"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/util"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/hal"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/scheduler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/common"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/device_manager"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu/ble_transport"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_bas"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_dfu"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_dis"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/toolchain/cmsis/include"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/softdevice/s130/headers"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/device"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/toolchain/gcc"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/toolchain"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/twi_master/incubated}"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/delay"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BLEMP/src}&quot;"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1938582912" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
 							</tool>
@@ -121,12 +129,12 @@
 							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.861822720" name="Cross ARM C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1686326756" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.other.1898240593" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.other" value="" valueType="string"/>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile.1898554692" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc}/nrf51_sdk/components/softdevice/s130/toolchain/armgcc/armgcc_s130_nrf51422_xxac.ld&quot;"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile.1898554692" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/softdevice/s130/toolchain/armgcc/armgcc_s130_nrf51422_xxac.ld"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.nodeflibs.967125885" name="Do not use default libraries (-nodefaultlibs)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.nodeflibs" value="true" valueType="boolean"/>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.paths.742119050" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc}/nrf51_sdk/components/toolchain/gcc&quot;"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.paths.742119050" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.paths" useByScannerDiscovery="false" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/toolchain/gcc"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.libs.1483200506" name="Libraries (-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.libs"/>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.input.252766232" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.input">
@@ -261,30 +269,30 @@
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.1310397904" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
 							</tool>
 							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.313365426" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1797698980">
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.2044419517" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_hids"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu/experimental"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/gpiote"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_debug_assert_handler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/ble_flash"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_error_log"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/pstorage"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/trace"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/softdevice/common/softdevice_handler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/timer"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/util"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/drivers_nrf/hal"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/scheduler"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/common"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/device_manager"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/libraries/bootloader_dfu/ble_transport"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_bas"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_dfu"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/ble/ble_services/ble_dis"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.2044419517" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_hids"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu/experimental"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/gpiote"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_debug_assert_handler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/ble_flash"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_error_log"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/pstorage"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/trace"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/softdevice/common/softdevice_handler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/timer"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/util"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/drivers_nrf/hal"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/scheduler"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/common"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/device_manager"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/libraries/bootloader_dfu/ble_transport"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_bas"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_dfu"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/ble/ble_services/ble_dis"/>
 									<listOptionValue builtIn="false" value="${workspace_loc:}/work/BLEMP/src"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/services}&quot;"/>
-									<listOptionValue builtIn="false" value="${workspace_loc:}/nrf51_sdk/components/softdevice/s130/include"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/src/services}"/>
+									<listOptionValue builtIn="false" value="${NRF_SDK}/components/softdevice/s130/include"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1328394196" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
 							</tool>
@@ -304,6 +312,7 @@
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 			<storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
+			<storageModule moduleId="ilg.gnumcueclipse.managedbuild.packs"/>
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -322,16 +331,20 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
-	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings">
+		<doc-comment-owner id="org.eclipse.cdt.ui.doxygen">
+			<path value=""/>
+		</doc-comment-owner>
+	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1797698980;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1938582912">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708.751088353;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708.751088353.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1056358816;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1032779517">
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1369921146;ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1369921146.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.885797085;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.435783091">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1369921146;ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.1369921146.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.885797085;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.435783091">
+		<scannerConfigBuildInfo instanceId="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708.751088353;ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.2025179708.751088353.;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1056358816;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1032779517">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>

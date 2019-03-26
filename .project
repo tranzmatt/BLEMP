@@ -32,62 +32,68 @@
 		<link>
 			<name>src/nrf51_sdk/app_gpiote_fast_detect.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/libraries/gpiote/app_gpiote_fast_detect.c</locationURI>
+			<locationURI>SDK_ROOT/components/libraries/gpiote/app_gpiote_fast_detect.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/app_scheduler.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/libraries/scheduler/app_scheduler.c</locationURI>
+			<locationURI>SDK_ROOT/components/libraries/scheduler/app_scheduler.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/app_timer.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/libraries/timer/app_timer.c</locationURI>
+			<locationURI>SDK_ROOT/components/libraries/timer/app_timer.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/app_util_platform.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/libraries/util/app_util_platform.c</locationURI>
+			<locationURI>SDK_ROOT/components/libraries/util/app_util_platform.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/ble_advdata.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/ble/common/ble_advdata.c</locationURI>
+			<locationURI>SDK_ROOT/components/ble/common/ble_advdata.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/ble_conn_params.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/ble/common/ble_conn_params.c</locationURI>
+			<locationURI>SDK_ROOT/components/ble/common/ble_conn_params.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/ble_dis.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/ble/ble_services/ble_dis/ble_dis.c</locationURI>
+			<locationURI>SDK_ROOT/components/ble/ble_services/ble_dis/ble_dis.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/ble_srv_common.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/ble/common/ble_srv_common.c</locationURI>
+			<locationURI>SDK_ROOT/components/ble/common/ble_srv_common.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/pstorage.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/drivers_nrf/pstorage/pstorage.c</locationURI>
+			<locationURI>SDK_ROOT/components/drivers_nrf/pstorage/pstorage.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/softdevice_handler.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/nrf51_sdk/components/softdevice/common/softdevice_handler/softdevice_handler.c</locationURI>
+			<locationURI>SDK_ROOT/components/softdevice/common/softdevice_handler/softdevice_handler.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/softdevice_handler_appsh.c</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/nrf51_sdk/components/softdevice/common/softdevice_handler/softdevice_handler_appsh.c</locationURI>
+			<locationURI>SDK_ROOT/components/softdevice/common/softdevice_handler/softdevice_handler_appsh.c</locationURI>
 		</link>
 		<link>
 			<name>src/nrf51_sdk/system_nrf51422.c</name>
 			<type>1</type>
-			<locationURI>WORKSPACE_LOC/nrf51_sdk/components/toolchain/system_nrf51422.c</locationURI>
+			<locationURI>SDK_ROOT/components/toolchain/system_nrf51422.c</locationURI>
 		</link>
 	</linkedResources>
+	<variableList>
+		<variable>
+			<name>SDK_ROOT</name>
+			<value>file:/home/mclark/Code/NordicSemiconductor/SDK/nRF51_SDK_9.0.0_2e23562_full</value>
+		</variable>
+	</variableList>
 </projectDescription>
